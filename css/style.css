@@ -1,0 +1,140 @@
+/* Обнуление */
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+ul,
+ol,
+li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+html,
+body {
+	height: 100%;
+	line-height: 1;
+	background: #fafafa;
+	font-size: 14px;
+	color: #252b42;
+	font-weight: 500;
+	font-family: Montserrat;
+}
+
+/* ---------Technical classes------------- */
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+._container {
+	max-width: 1046px;
+	padding: 0px 15px;
+	margin: 0px auto;
+	box-sizing: content-box;
+}
+
+/* ------------Header---------------- */
+
+.header {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 50;
+}
+
+.header__container {
+	display: flex;
+	min-height: 104px;
+	align-items: center;
+}
+
+@media (max-width: 479px) {
+	.header__container {
+		min-height: 70px;
+	}
+}
+
+.header__logo {
+	font-weight: 700;
+	font-size: 24px;
+	color: inherit;
+}
+
+.header__menu {
+	margin: 0 0 0 132px;
+}
+
+@media (max-width: 992px) {
+	.header__menu {
+		margin: 0 0 0 80px;
+	}
+}
+
+@media (max-width: 767px) {
+	.header__menu {
+		margin: 0 0 0 40px;
+	}
+}
+@media (max-width: 479px) {
+	.header__menu {
+		margin: 0 0 0 20px;
+	}
+}
+
+.menu {
+	padding: 5px 0;
+}
+
+.menu__list {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.menu__item {
+}
+
+.menu__item:not(:last-child) {
+	margin: 0px 21px 0px 0px;
+}
+
+.menu__link {
+	color: #737373;
+	line-height: 171%;
+	font-weight: 600;
+}
+@media (max-width: 479px) {
+	.menu__link {
+		font-size: 18px;
+	}
+}
+
+/* ----------Main------------------- */
+
+.main {
+	flex: 1 1 auto;
+}
+/* ----------Footer------------------- */
+.footer {
+}
